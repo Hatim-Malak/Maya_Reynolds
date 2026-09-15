@@ -3,31 +3,31 @@ import React from 'react';
 export default function SpecialtiesSection() {
   const specialties = [
     {
+      title: "Anxiety & Panic",
+      desc: "Constant worry, tension in the body, difficulty sleeping, or a sense that you're always bracing for something to go wrong. In therapy, we'll work together to understand what's driving it — and build tools that help you feel calmer, more grounded, and more in control."
+    },
+    {
       title: "Trauma",
-      desc: "We don't always know when and how we've experienced trauma. In therapy, we'll work together to help you process your past, understand what's causing you to stay \"stuck,\" and regain a sense of safety, control, and hope. You don't have to carry your burdens alone."
+      desc: "I work with adults who have experienced single-incident trauma as well as more complex, long-standing patterns that may stem from childhood, relationships, or chronic stress. Our work is paced carefully, with an emphasis on safety, stabilization, and helping you feel more regulated in your daily life."
     },
     {
       title: "EMDR",
-      desc: "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing."
+      desc: "Eye Movement Desensitization and Reprocessing (EMDR) is an evidence-based therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in the brain. This allows you to find relief and move toward lasting healing."
     },
     {
-      title: "Dissociation",
-      desc: "The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we'll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded."
-    },
-    {
-      title: "Special Needs Parenting",
-      desc: "Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care."
+      title: "Burnout & Perfectionism",
+      desc: "Many of the clients I support are entrepreneurs, creatives, or professionals who feel disconnected from themselves after years of pushing through stress. Therapy becomes a space to slow down, reconnect, and develop more sustainable ways of living and working."
     }
   ];
 
   return (
-    <section className="w-full bg-white py-24 md:py-32 px-8 md:px-[8%]">
+    <section id="specialties" className="w-full bg-accent py-24 md:py-32 px-8 md:px-[8%]">
       <div className="flex flex-col md:flex-row items-start justify-between w-full">
         
         {/* Left Heading Column */}
         <div className="w-full md:w-[35%] mb-16 md:mb-0 pt-2">
           <h2 className="font-serif text-[2.1rem] leading-[1.3] font-light text-foreground">
-            Our <span className="font-cursive text-primary text-[3.25rem] leading-[0.5] align-middle -ml-1 mr-1">specialties</span><br />
+            My <span className="font-cursive text-primary text-[3.25rem] leading-[0.5] align-middle -ml-1 mr-1">specialties</span><br />
             include...
           </h2>
         </div>
@@ -37,7 +37,7 @@ export default function SpecialtiesSection() {
           {specialties.map((item, idx) => (
             <div key={idx} className="flex flex-col h-full">
               <h3 className="font-serif text-[1.2rem] font-light text-foreground mb-5">{item.title}</h3>
-              <p className="text-foreground/80 text-[11px] leading-[2.2] font-light mb-12 flex-grow">
+              <p className="text-foreground/80 text-[13px] md:text-[14px] leading-[2.2] font-light mb-12 flex-grow">
                 {item.desc}
               </p>
               <div className="border-t border-foreground/10 pt-4 mt-auto">

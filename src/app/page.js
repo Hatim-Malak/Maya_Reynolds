@@ -1,16 +1,16 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import VideoSection from "../components/VideoSection";
 import Introduction from "../components/Introduction";
 import HowWeWork from "../components/HowWeWork";
 import FinalQuote from "../components/FinalQuote";
+import OurOffice from "../components/OurOffice";
 import SpecialtiesSection from "../components/SpecialtiesSection";
 import CTASection from "../components/CTASection";
 import Footer from "../components/Footer";
 
 function WhoWeHelp() {
   return (
-    <section className="py-24 px-8 md:px-[8%] bg-white">
+    <section className="py-24 px-8 md:px-[8%] bg-accent">
       <div className="w-full mx-auto">
         
         <div className="flex flex-col items-start mb-14">
@@ -19,51 +19,63 @@ function WhoWeHelp() {
           </h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           
           {/* Column 1 */}
-          <div className="flex flex-col">
-            <div className="relative aspect-square mb-6 overflow-hidden">
+          <div className="flex flex-col group cursor-pointer">
+            <div className="relative aspect-[4/5] mb-8 overflow-hidden rounded-sm">
               <img 
                 src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" 
                 alt="Calm adult at ease" 
-                className="object-cover w-full h-full" 
+                className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-[1.03]" 
               />
             </div>
-            <h3 className="font-serif text-[1.35rem] font-light text-foreground mb-4">Anxiety & Panic</h3>
-            <p className="text-foreground/90 text-[11.5px] leading-[2.2] font-light pr-4">
-              Constant worry, racing thoughts, body tension, and difficulty sleeping. I help adults understand what's driving their anxiety — and build <span className="text-primary font-normal">practical tools that help them feel steadier</span>, not just in session, but in <span className="text-primary font-normal">daily life.</span>
+            <h3 className="font-serif text-[1.5rem] font-light text-foreground mb-4">Anxiety & Panic</h3>
+            <p className="text-foreground/80 text-base leading-relaxed font-light mb-6 pr-4">
+              Support for navigating persistent worry, panic, and feeling constantly on edge.
             </p>
+            <div className="flex items-center gap-2 text-[11px] font-medium tracking-[0.2em] text-foreground uppercase mt-auto">
+              <span className="group-hover:opacity-70 transition-opacity">Explore</span>
+              <span className="transform transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+            </div>
           </div>
 
           {/* Column 2 */}
-          <div className="flex flex-col">
-            <div className="relative aspect-square mb-6 overflow-hidden">
+          <div className="flex flex-col group cursor-pointer">
+            <div className="relative aspect-[4/5] mb-8 overflow-hidden rounded-sm">
               <img 
                 src="https://images.unsplash.com/photo-1516585427167-9f4af9627e6c" 
                 alt="Adult reflecting in therapy" 
-                className="object-cover w-full h-full" 
+                className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-[1.03]" 
               />
             </div>
-            <h3 className="font-serif text-[1.35rem] font-light text-foreground mb-4">Trauma & PTSD</h3>
-            <p className="text-foreground/90 text-[11.5px] leading-[2.2] font-light pr-4">
-              I work with adults who have experienced <span className="text-primary font-normal">single-incident trauma</span> as well as more complex, long-standing patterns that may stem from <span className="text-primary font-normal">childhood, relationships, or chronic stress</span> — paced carefully, with an emphasis on <span className="text-primary font-normal">safety and stabilization</span>.
+            <h3 className="font-serif text-[1.5rem] font-light text-foreground mb-4">Trauma & PTSD</h3>
+            <p className="text-foreground/80 text-base leading-relaxed font-light mb-6 pr-4">
+              A safe, collaborative space to process difficult experiences and move forward.
             </p>
+            <div className="flex items-center gap-2 text-[11px] font-medium tracking-[0.2em] text-foreground uppercase mt-auto">
+              <span className="group-hover:opacity-70 transition-opacity">Explore</span>
+              <span className="transform transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+            </div>
           </div>
 
           {/* Column 3 */}
-          <div className="flex flex-col">
-            <div className="relative aspect-square mb-6 overflow-hidden">
+          <div className="flex flex-col group cursor-pointer">
+            <div className="relative aspect-[4/5] mb-8 overflow-hidden rounded-sm">
               <img 
                 src="https://images.unsplash.com/photo-1494059980473-813e73ee784b" 
                 alt="Professional taking time for herself" 
-                className="object-cover w-full h-full object-bottom" 
+                className="object-cover w-full h-full object-bottom transform transition-transform duration-700 group-hover:scale-[1.03]" 
               />
             </div>
-            <h3 className="font-serif text-[1.35rem] font-light text-foreground mb-4">Burnout & Perfectionism</h3>
-            <p className="text-foreground/90 text-[11.5px] leading-[2.2] font-light pr-4">
-              Entrepreneurs, creatives, and professionals who feel <span className="text-primary font-normal">disconnected from themselves</span> after years of pushing through stress. A space to <span className="text-primary font-normal">slow down, reconnect,</span> and develop more <span className="text-primary font-normal">sustainable ways of living and working</span>.
+            <h3 className="font-serif text-[1.5rem] font-light text-foreground mb-4">Burnout & Perfectionism</h3>
+            <p className="text-foreground/80 text-base leading-relaxed font-light mb-6 pr-4">
+              Support for people who feel exhausted from always trying to do more.
             </p>
+            <div className="flex items-center gap-2 text-[11px] font-medium tracking-[0.2em] text-foreground uppercase mt-auto">
+              <span className="group-hover:opacity-70 transition-opacity">Explore</span>
+              <span className="transform transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+            </div>
           </div>
           
         </div>
@@ -77,7 +89,7 @@ function QuoteBanner() {
     <section className="py-32 md:py-48 px-8 md:px-[8%] relative flex items-center justify-start overflow-hidden min-h-[550px]">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=2070&auto=format&fit=crop" 
+          src="./conversation.jpeg" 
           alt="Background Texture" 
           className="w-full h-full object-cover object-center" 
         />
@@ -95,61 +107,49 @@ function QuoteBanner() {
 }
 
 function WhatWeTreat() {
-  const leftCol = [
-    "ANXIETY",
-    "PANIC",
-    "TRAUMA",
-    "BURNOUT",
-    "PERFECTIONISM",
-    "STRESS"
-  ];
-  
-  const rightCol = [
-    "OVERTHINKING",
-    "TROUBLE SLEEPING",
-    "BODY TENSION",
-    "RELATIONSHIPS",
-    "SELF-CONFIDENCE",
-    "...AND MORE."
+  const expertiseList = [
+    "Anxiety & Panic",
+    "Trauma & PTSD",
+    "Burnout & Perfectionism",
+    "Life Transitions",
+    "Self-Esteem",
+    "Relationship Patterns",
+    "Stress & Overwhelm"
   ];
 
   return (
-    <section className="py-24 md:py-32 px-8 md:px-[8%] bg-white">
+    <section className="py-24 md:py-32 px-8 md:px-[8%] bg-secondary">
       <div className="w-full mx-auto flex flex-col md:flex-row justify-between items-start">
         
         {/* Left Heading */}
-        <div className="w-full md:w-[35%] mb-16 md:mb-0 pt-2">
-          <h2 className="flex flex-col items-start font-serif text-[2.75rem] leading-none text-foreground font-light">
+        <div className="w-full md:w-[40%] mb-16 md:mb-0 pt-2">
+          <h2 className="flex flex-col items-start font-serif text-[2.75rem] sm:text-5xl lg:text-[4rem] leading-none text-foreground font-light">
             <span>My areas of</span>
-            <span className="font-cursive text-primary text-[5rem] leading-[0.5] mt-2">expertise</span>
+            <span className="font-cursive text-accent text-[5rem] lg:text-[6.5rem] leading-[0.5] mt-4 lg:mt-6">expertise</span>
           </h2>
         </div>
         
-        {/* Right List */}
-        <div className="w-full md:w-[55%] lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16">
-          
-          <div className="flex flex-col">
-            {leftCol.map((item, idx) => (
-              <div 
-                key={`left-${idx}`} 
-                className={`py-6 border-b border-foreground/10 text-[9.5px] font-normal tracking-[0.2em] text-foreground/80 uppercase ${idx === 0 ? 'pt-2' : ''}`}
-              >
-                {item}
+        {/* Right Editorial List */}
+        <div className="w-full md:w-[50%] lg:w-[45%] flex flex-col">
+          {expertiseList.map((item, idx) => (
+            <a 
+              key={idx} 
+              href="#contact"
+              className="group flex items-center justify-between py-6 border-b border-foreground/10 hover:border-foreground/30 transition-colors duration-300"
+            >
+              <div className="flex items-baseline gap-6">
+                <span className="text-xs text-foreground/50 font-normal tracking-[0.2em]">
+                  {(idx + 1).toString().padStart(2, '0')}
+                </span>
+                <span className="text-lg md:text-xl font-light text-foreground group-hover:text-primary transition-colors duration-300">
+                  {item}
+                </span>
               </div>
-            ))}
-          </div>
-
-          <div className="flex flex-col">
-            {rightCol.map((item, idx) => (
-              <div 
-                key={`right-${idx}`} 
-                className={`py-6 border-b border-foreground/10 text-[9.5px] font-normal tracking-[0.2em] text-foreground/80 uppercase ${idx === 0 ? 'pt-2' : ''}`}
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-
+              <span className="text-foreground/50 transform group-hover:translate-x-1 group-hover:text-primary transition-all duration-300">
+                &rarr;
+              </span>
+            </a>
+          ))}
         </div>
         
       </div>
@@ -159,7 +159,7 @@ function WhatWeTreat() {
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full flex-col font-sans bg-background text-foreground">
+    <div className="flex min-h-screen w-full flex-col font-sans bg-accent text-foreground">
       <Header />
       <main className="flex-1">
         <Hero />
@@ -168,6 +168,7 @@ export default function Home() {
         <QuoteBanner />
         <WhatWeTreat />
         <HowWeWork />
+        <OurOffice />
         <FinalQuote />
         <SpecialtiesSection />
         <CTASection />
